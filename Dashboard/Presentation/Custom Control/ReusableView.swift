@@ -10,8 +10,6 @@ import UIKit
 
 class ReusableView: UIView {
 
-    var nibName = ""
-
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()

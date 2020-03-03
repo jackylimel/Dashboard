@@ -9,7 +9,21 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
+
+    private let lectureUseCase = LectureUseCase()
+
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
+        setupNavigationBar()
+        super.viewDidLoad()
+
+        tableView.register(cellType: LectureCell.self)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+
+    private func setupNavigationBar() {
         let greetingView = GreetingView(frame: CGRect.zero)
         greetingView.config(with: "Hello", time: "12/3 Friday, Week 8")
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: greetingView)
@@ -17,11 +31,6 @@ class DashboardViewController: UIViewController {
         let searchButtonItem = createNavigationItem(image: .search)
         let profileButtonItem = createNavigationItem(image: .profile)
         navigationItem.rightBarButtonItems = [searchButtonItem, profileButtonItem]
-        super.viewDidLoad()
-    }
-
-    @objc func addTapped() {
-
     }
 
     private func createNavigationItem(image: ImageName) -> UIBarButtonItem {
@@ -32,4 +41,21 @@ class DashboardViewController: UIViewController {
         buttonItem.tintColor = .black
         return buttonItem
     }
+}
+
+extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lectureUseCase.getLectures(within: 0).count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueCell(ofType: LectureCell.self)
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+
+
 }
