@@ -10,18 +10,14 @@ import UIKit
 
 class LectureCell: UITableViewCell {
     
-    @IBOutlet weak var startHour: UILabel!
-    @IBOutlet weak var startPeriod: UILabel!
-
-    @IBOutlet weak var endHour: UILabel!
-    @IBOutlet weak var endPeriod: UILabel!
-
+    @IBOutlet weak var startHourLabel: UILabel!
+    @IBOutlet weak var startPeriodLabel: UILabel!
+    @IBOutlet weak var endHourLabel: UILabel!
+    @IBOutlet weak var endPeriodLabel: UILabel!
     @IBOutlet weak var verticalSeparator: UIView!
-
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var classRoom: UILabel!
-    @IBOutlet weak var teacher: UILabel!
-    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var classRoomLabel: UILabel!
+    @IBOutlet weak var teacherLabel: UILabel!
     @IBOutlet weak var horizontalSeparator: UIView!
 
     override func awakeFromNib() {
@@ -32,5 +28,36 @@ class LectureCell: UITableViewCell {
     private func setupStyle() {
         verticalSeparator.backgroundColor = ColorPalette.blue
         horizontalSeparator.backgroundColor = ColorPalette.veryLight
+
+        startHourLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        startPeriodLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        endHourLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        endPeriodLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        nameLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        classRoomLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        teacherLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
+
+    func config(with model: Model) {
+        startHourLabel.text = model.startHour
+        startPeriodLabel.text = model.startPeriod
+        endHourLabel.text = model.endHour
+        endPeriodLabel.text = model.endPeriod
+        nameLabel.text = model.name
+        classRoomLabel.text = model.classRoom
+        teacherLabel.text = model.teacher
+    }
+}
+
+extension LectureCell {
+    struct Model {
+        let startHour: String
+        let startPeriod: String
+        let endHour: String
+        let endPeriod: String
+        let name: String
+        let classRoom: String
+        let teacher: String
+        let shouldShowRoundedCorner: Bool
     }
 }

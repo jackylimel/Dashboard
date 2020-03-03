@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,22 +13,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3J-bz-hml" userLabel="lectureContainer">
-                    <rect key="frame" x="20" y="0.0" width="374" height="146"/>
+                    <rect key="frame" x="20" y="0.0" width="394" height="146"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5b-ii-90H" userLabel="timeInfoView">
-                            <rect key="frame" x="5" y="43" width="100" height="60"/>
+                            <rect key="frame" x="5" y="48" width="70" height="50"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJd-51-3gx" userLabel="startTime">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="25"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxi-qP-gid" userLabel="startHour">
-                                            <rect key="frame" x="0.0" y="4.5" width="50" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxi-qP-gid" userLabel="startHour">
+                                            <rect key="frame" x="0.0" y="2" width="47" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulj-t6-Ehd" userLabel="startPeriod">
-                                            <rect key="frame" x="50" y="4.5" width="50" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulj-t6-Ehd" userLabel="startPeriod">
+                                            <rect key="frame" x="47" y="2" width="23" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -39,22 +39,22 @@
                                         <constraint firstAttribute="trailing" secondItem="Ulj-t6-Ehd" secondAttribute="trailing" id="0xw-p2-bTq"/>
                                         <constraint firstItem="Vxi-qP-gid" firstAttribute="leading" secondItem="uJd-51-3gx" secondAttribute="leading" id="IfH-53-VwL"/>
                                         <constraint firstItem="Vxi-qP-gid" firstAttribute="centerY" secondItem="uJd-51-3gx" secondAttribute="centerY" id="Jyr-Zh-hQz"/>
-                                        <constraint firstItem="Ulj-t6-Ehd" firstAttribute="width" secondItem="uJd-51-3gx" secondAttribute="width" multiplier="0.5" id="Nxa-Ve-uog"/>
-                                        <constraint firstItem="Vxi-qP-gid" firstAttribute="width" secondItem="uJd-51-3gx" secondAttribute="width" multiplier="0.5" id="WuC-t8-0NY"/>
+                                        <constraint firstItem="Ulj-t6-Ehd" firstAttribute="width" secondItem="uJd-51-3gx" secondAttribute="width" multiplier="0.33" id="Nxa-Ve-uog"/>
+                                        <constraint firstItem="Vxi-qP-gid" firstAttribute="width" secondItem="uJd-51-3gx" secondAttribute="width" multiplier="0.67" id="WuC-t8-0NY"/>
                                         <constraint firstItem="Ulj-t6-Ehd" firstAttribute="centerY" secondItem="uJd-51-3gx" secondAttribute="centerY" id="pTh-NA-s1O"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-qh-spx" userLabel="endTime">
-                                    <rect key="frame" x="0.0" y="30" width="100" height="30"/>
+                                    <rect key="frame" x="0.0" y="25" width="70" height="25"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fw-dp-Bhh" userLabel="endHour">
-                                            <rect key="frame" x="0.0" y="4.5" width="50" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fw-dp-Bhh" userLabel="endHour">
+                                            <rect key="frame" x="0.0" y="2" width="47" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mN5-Ue-k4W" userLabel="endPeriod">
-                                            <rect key="frame" x="50" y="4.5" width="50" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mN5-Ue-k4W" userLabel="endPeriod">
+                                            <rect key="frame" x="47" y="2" width="23" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -63,11 +63,11 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstItem="4fw-dp-Bhh" firstAttribute="leading" secondItem="ubN-qh-spx" secondAttribute="leading" id="GnJ-Kb-fQw"/>
-                                        <constraint firstItem="mN5-Ue-k4W" firstAttribute="width" secondItem="ubN-qh-spx" secondAttribute="width" multiplier="0.5" id="LK3-nI-UBc"/>
+                                        <constraint firstItem="mN5-Ue-k4W" firstAttribute="width" secondItem="ubN-qh-spx" secondAttribute="width" multiplier="0.33" id="LK3-nI-UBc"/>
                                         <constraint firstItem="4fw-dp-Bhh" firstAttribute="centerY" secondItem="ubN-qh-spx" secondAttribute="centerY" id="Vbs-JV-rsT"/>
                                         <constraint firstItem="mN5-Ue-k4W" firstAttribute="centerY" secondItem="ubN-qh-spx" secondAttribute="centerY" id="cUp-Zw-Jdk"/>
                                         <constraint firstAttribute="trailing" secondItem="mN5-Ue-k4W" secondAttribute="trailing" id="yA8-f7-hKl"/>
-                                        <constraint firstItem="4fw-dp-Bhh" firstAttribute="width" secondItem="ubN-qh-spx" secondAttribute="width" multiplier="0.5" id="ybZ-LZ-SoG"/>
+                                        <constraint firstItem="4fw-dp-Bhh" firstAttribute="width" secondItem="ubN-qh-spx" secondAttribute="width" multiplier="0.67" id="ybZ-LZ-SoG"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -80,35 +80,35 @@
                                 <constraint firstItem="ubN-qh-spx" firstAttribute="centerX" secondItem="A5b-ii-90H" secondAttribute="centerX" id="eFU-Sw-qeV"/>
                                 <constraint firstItem="uJd-51-3gx" firstAttribute="top" secondItem="A5b-ii-90H" secondAttribute="top" id="iEs-SR-geb"/>
                                 <constraint firstItem="uJd-51-3gx" firstAttribute="centerX" secondItem="A5b-ii-90H" secondAttribute="centerX" id="poi-jp-wtA"/>
-                                <constraint firstAttribute="width" constant="100" id="wjn-2c-yg1"/>
-                                <constraint firstAttribute="height" constant="60" id="zi8-8g-KFZ"/>
+                                <constraint firstAttribute="width" constant="70" id="wjn-2c-yg1"/>
+                                <constraint firstAttribute="height" constant="50" id="zi8-8g-KFZ"/>
                                 <constraint firstAttribute="bottom" secondItem="ubN-qh-spx" secondAttribute="bottom" id="zjc-E6-Bzh"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeV-Gi-6Eh" userLabel="verticalSeparator">
-                            <rect key="frame" x="125" y="15" width="2" height="116"/>
+                            <rect key="frame" x="90" y="15" width="2" height="116"/>
                             <color key="backgroundColor" red="0.32941176470588235" green="0.51764705882352935" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="2" id="aVt-AX-ZHJ"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNQ-3o-gZ2" userLabel="lectureInfoView">
-                            <rect key="frame" x="147" y="20" width="207" height="106"/>
+                            <rect key="frame" x="107" y="20" width="287" height="106"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5l-X8-czp" userLabel="name">
-                                    <rect key="frame" x="10" y="17.5" width="177" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIT1031 Lecture 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5l-X8-czp" userLabel="name">
+                                    <rect key="frame" x="0.0" y="15.333333333333334" width="267" height="20.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-Pm-jTl" userLabel="teacher">
-                                    <rect key="frame" x="10" y="43" width="177" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arun Kongaurthu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-Pm-jTl" userLabel="teacher">
+                                    <rect key="frame" x="0.0" y="42.666666666666664" width="267" height="20.666666666666664"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCO-Ig-QVq" userLabel="classroom">
-                                    <rect key="frame" x="10" y="68.5" width="177" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S4, 13 Collage Walk, Clayton" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCO-Ig-QVq" userLabel="classroom">
+                                    <rect key="frame" x="0.0" y="70.333333333333329" width="267" height="20.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -116,14 +116,14 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstItem="CCO-Ig-QVq" firstAttribute="leading" secondItem="TNQ-3o-gZ2" secondAttribute="leading" constant="10" id="0KM-q6-8Si"/>
+                                <constraint firstItem="CCO-Ig-QVq" firstAttribute="leading" secondItem="TNQ-3o-gZ2" secondAttribute="leading" id="0KM-q6-8Si"/>
                                 <constraint firstAttribute="trailing" secondItem="CCO-Ig-QVq" secondAttribute="trailing" constant="20" id="4Nb-PC-Ih0"/>
                                 <constraint firstAttribute="trailing" secondItem="M5l-X8-czp" secondAttribute="trailing" constant="20" id="BGK-71-44R"/>
-                                <constraint firstItem="PjN-Pm-jTl" firstAttribute="top" secondItem="M5l-X8-czp" secondAttribute="bottom" constant="5" id="E7Z-Ei-pA9"/>
-                                <constraint firstItem="PjN-Pm-jTl" firstAttribute="leading" secondItem="TNQ-3o-gZ2" secondAttribute="leading" constant="10" id="Sqs-UG-JVa"/>
+                                <constraint firstItem="PjN-Pm-jTl" firstAttribute="top" secondItem="M5l-X8-czp" secondAttribute="bottom" constant="7" id="E7Z-Ei-pA9"/>
+                                <constraint firstItem="PjN-Pm-jTl" firstAttribute="leading" secondItem="TNQ-3o-gZ2" secondAttribute="leading" id="Sqs-UG-JVa"/>
                                 <constraint firstItem="PjN-Pm-jTl" firstAttribute="centerY" secondItem="TNQ-3o-gZ2" secondAttribute="centerY" id="bYj-ob-idN"/>
-                                <constraint firstItem="CCO-Ig-QVq" firstAttribute="top" secondItem="PjN-Pm-jTl" secondAttribute="bottom" constant="5" id="hLS-J8-pXU"/>
-                                <constraint firstItem="M5l-X8-czp" firstAttribute="leading" secondItem="TNQ-3o-gZ2" secondAttribute="leading" constant="10" id="ngm-8u-hzo"/>
+                                <constraint firstItem="CCO-Ig-QVq" firstAttribute="top" secondItem="PjN-Pm-jTl" secondAttribute="bottom" constant="7" id="hLS-J8-pXU"/>
+                                <constraint firstItem="M5l-X8-czp" firstAttribute="leading" secondItem="TNQ-3o-gZ2" secondAttribute="leading" id="ngm-8u-hzo"/>
                                 <constraint firstAttribute="trailing" secondItem="PjN-Pm-jTl" secondAttribute="trailing" constant="20" id="qqP-y5-53K"/>
                             </constraints>
                         </view>
@@ -131,14 +131,14 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="FeV-Gi-6Eh" secondAttribute="bottom" constant="15" id="Fkg-UR-Q7r"/>
-                        <constraint firstAttribute="trailing" secondItem="TNQ-3o-gZ2" secondAttribute="trailing" constant="20" id="Tow-b2-kpH"/>
+                        <constraint firstAttribute="trailing" secondItem="TNQ-3o-gZ2" secondAttribute="trailing" id="Tow-b2-kpH"/>
                         <constraint firstItem="FeV-Gi-6Eh" firstAttribute="top" secondItem="A3J-bz-hml" secondAttribute="top" constant="15" id="Uzv-nb-1Wb"/>
                         <constraint firstAttribute="bottom" secondItem="TNQ-3o-gZ2" secondAttribute="bottom" constant="20" id="ZKU-Wk-fLk"/>
-                        <constraint firstItem="FeV-Gi-6Eh" firstAttribute="leading" secondItem="A5b-ii-90H" secondAttribute="trailing" constant="20" id="cvb-2G-0Go"/>
+                        <constraint firstItem="FeV-Gi-6Eh" firstAttribute="leading" secondItem="A5b-ii-90H" secondAttribute="trailing" constant="15" id="cvb-2G-0Go"/>
                         <constraint firstItem="TNQ-3o-gZ2" firstAttribute="top" secondItem="A3J-bz-hml" secondAttribute="top" constant="20" id="oEc-3T-rP3"/>
                         <constraint firstItem="A5b-ii-90H" firstAttribute="centerY" secondItem="A3J-bz-hml" secondAttribute="centerY" id="tw3-tW-Xyl"/>
                         <constraint firstItem="A5b-ii-90H" firstAttribute="leading" secondItem="A3J-bz-hml" secondAttribute="leading" constant="5" id="vR3-PW-kay"/>
-                        <constraint firstItem="TNQ-3o-gZ2" firstAttribute="leading" secondItem="FeV-Gi-6Eh" secondAttribute="trailing" constant="20" id="vTC-qf-f8C"/>
+                        <constraint firstItem="TNQ-3o-gZ2" firstAttribute="leading" secondItem="FeV-Gi-6Eh" secondAttribute="trailing" constant="15" id="vTC-qf-f8C"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-Ma-sZw" userLabel="horizontalSeparator">
@@ -152,7 +152,7 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="z2f-Ma-sZw" secondAttribute="bottom" id="D1K-mk-fcb"/>
                 <constraint firstAttribute="trailing" secondItem="z2f-Ma-sZw" secondAttribute="trailing" constant="20" id="FoI-Nr-L9S"/>
-                <constraint firstAttribute="trailing" secondItem="A3J-bz-hml" secondAttribute="trailing" constant="20" id="TxI-MI-QxU"/>
+                <constraint firstAttribute="trailing" secondItem="A3J-bz-hml" secondAttribute="trailing" id="TxI-MI-QxU"/>
                 <constraint firstItem="A3J-bz-hml" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YWd-S0-8q2"/>
                 <constraint firstItem="A3J-bz-hml" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="rEC-vV-g4S"/>
                 <constraint firstItem="z2f-Ma-sZw" firstAttribute="top" secondItem="A3J-bz-hml" secondAttribute="bottom" id="rfv-So-pv2"/>
@@ -160,15 +160,15 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="classRoom" destination="CCO-Ig-QVq" id="cPA-v9-V4H"/>
-                <outlet property="endHour" destination="4fw-dp-Bhh" id="hd7-q5-qOA"/>
-                <outlet property="endPeriod" destination="mN5-Ue-k4W" id="ULe-wz-bZY"/>
-                <outlet property="horizontalSeparator" destination="z2f-Ma-sZw" id="hef-s6-DWc"/>
-                <outlet property="name" destination="M5l-X8-czp" id="NGO-US-3bO"/>
-                <outlet property="startHour" destination="Vxi-qP-gid" id="InX-ji-Es6"/>
-                <outlet property="startPeriod" destination="Ulj-t6-Ehd" id="LQS-Ur-jed"/>
-                <outlet property="teacher" destination="PjN-Pm-jTl" id="TrD-Sh-3ez"/>
-                <outlet property="verticalSeparator" destination="FeV-Gi-6Eh" id="pDm-Kz-CnV"/>
+                <outlet property="classRoomLabel" destination="CCO-Ig-QVq" id="HG0-GC-NEN"/>
+                <outlet property="endHourLabel" destination="4fw-dp-Bhh" id="vM4-wg-F9O"/>
+                <outlet property="endPeriodLabel" destination="mN5-Ue-k4W" id="Tzz-Tr-0aM"/>
+                <outlet property="horizontalSeparator" destination="z2f-Ma-sZw" id="M3B-iZ-MoL"/>
+                <outlet property="nameLabel" destination="M5l-X8-czp" id="zAm-0g-d78"/>
+                <outlet property="startHourLabel" destination="Vxi-qP-gid" id="gux-o2-sv1"/>
+                <outlet property="startPeriodLabel" destination="Ulj-t6-Ehd" id="NVN-3E-kVQ"/>
+                <outlet property="teacherLabel" destination="PjN-Pm-jTl" id="zal-oc-WY8"/>
+                <outlet property="verticalSeparator" destination="FeV-Gi-6Eh" id="Z8H-EE-v8Q"/>
             </connections>
             <point key="canvasLocation" x="142.02898550724638" y="231.36160714285714"/>
         </view>
