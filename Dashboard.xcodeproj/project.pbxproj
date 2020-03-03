@@ -14,6 +14,12 @@
 		91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E1240E2EE50014DA5F /* Assets.xcassets */; };
 		91CE24E5240E2EE50014DA5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E3240E2EE50014DA5F /* LaunchScreen.storyboard */; };
 		91CE24F0240E2EE60014DA5F /* DashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24EF240E2EE60014DA5F /* DashboardTests.swift */; };
+		91CE24FE240E2FF70014DA5F /* GreetingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24FD240E2FF70014DA5F /* GreetingView.xib */; };
+		91CE2500240E30560014DA5F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24FF240E30560014DA5F /* ReusableView.swift */; };
+		91CE2503240E312C0014DA5F /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2502240E312C0014DA5F /* GreetingView.swift */; };
+		91CE2505240E330D0014DA5F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2504240E330D0014DA5F /* DashboardViewController.swift */; };
+		91CE2507240E366D0014DA5F /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2506240E366D0014DA5F /* ColorPalette.swift */; };
+		91CE2509240E37170014DA5F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2508240E37170014DA5F /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		91CE24EB240E2EE60014DA5F /* DashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CE24EF240E2EE60014DA5F /* DashboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTests.swift; sourceTree = "<group>"; };
 		91CE24F1240E2EE60014DA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91CE24FD240E2FF70014DA5F /* GreetingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingView.xib; sourceTree = "<group>"; };
+		91CE24FF240E30560014DA5F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		91CE2502240E312C0014DA5F /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		91CE2504240E330D0014DA5F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		91CE2506240E366D0014DA5F /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		91CE2508240E37170014DA5F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		91CE24D7240E2EE40014DA5F /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				91CE24FA240E2F8D0014DA5F /* Presentation */,
 				91CE24D8240E2EE40014DA5F /* AppDelegate.swift */,
 				91CE24DA240E2EE40014DA5F /* SceneDelegate.swift */,
 				91CE24DC240E2EE40014DA5F /* ViewController.swift */,
@@ -97,6 +110,35 @@
 				91CE24F1240E2EE60014DA5F /* Info.plist */,
 			);
 			path = DashboardTests;
+			sourceTree = "<group>";
+		};
+		91CE24FA240E2F8D0014DA5F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				91CE24FC240E2FD90014DA5F /* Views */,
+				91CE2501240E310F0014DA5F /* Custom Control */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		91CE24FC240E2FD90014DA5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91CE24FD240E2FF70014DA5F /* GreetingView.xib */,
+				91CE2502240E312C0014DA5F /* GreetingView.swift */,
+				91CE2504240E330D0014DA5F /* DashboardViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91CE2501240E310F0014DA5F /* Custom Control */ = {
+			isa = PBXGroup;
+			children = (
+				91CE24FF240E30560014DA5F /* ReusableView.swift */,
+				91CE2506240E366D0014DA5F /* ColorPalette.swift */,
+				91CE2508240E37170014DA5F /* UIImage+Extension.swift */,
+			);
+			path = "Custom Control";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91CE24E5240E2EE50014DA5F /* LaunchScreen.storyboard in Resources */,
+				91CE24FE240E2FF70014DA5F /* GreetingView.xib in Resources */,
 				91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */,
 				91CE24E0240E2EE40014DA5F /* Main.storyboard in Resources */,
 			);
@@ -200,9 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CE2507240E366D0014DA5F /* ColorPalette.swift in Sources */,
 				91CE24DD240E2EE40014DA5F /* ViewController.swift in Sources */,
+				91CE2505240E330D0014DA5F /* DashboardViewController.swift in Sources */,
+				91CE2509240E37170014DA5F /* UIImage+Extension.swift in Sources */,
 				91CE24D9240E2EE40014DA5F /* AppDelegate.swift in Sources */,
 				91CE24DB240E2EE40014DA5F /* SceneDelegate.swift in Sources */,
+				91CE2503240E312C0014DA5F /* GreetingView.swift in Sources */,
+				91CE2500240E30560014DA5F /* ReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
