@@ -10,6 +10,8 @@
 		91369B12240E817D00135A30 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B11240E817D00135A30 /* ReusableView.swift */; };
 		91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */; };
 		91369B1A240E853900135A30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B19240E853900135A30 /* Constants.swift */; };
+		914FDB04240F92BD0029EB3E /* LectureSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB03240F92BD0029EB3E /* LectureSectionHeader.swift */; };
+		914FDB06240F93220029EB3E /* LectureSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB05240F93220029EB3E /* LectureSectionHeader.xib */; };
 		91CE24D9240E2EE40014DA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24D8240E2EE40014DA5F /* AppDelegate.swift */; };
 		91CE24E0240E2EE40014DA5F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24DE240E2EE40014DA5F /* Dashboard.storyboard */; };
 		91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E1240E2EE50014DA5F /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		91369B11240E817D00135A30 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
 		91369B19240E853900135A30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		914FDB03240F92BD0029EB3E /* LectureSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSectionHeader.swift; sourceTree = "<group>"; };
+		914FDB05240F93220029EB3E /* LectureSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectureSectionHeader.xib; sourceTree = "<group>"; };
 		91CE24D5240E2EE40014DA5F /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CE24D8240E2EE40014DA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91CE24DF240E2EE40014DA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
@@ -106,6 +110,17 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		914FDB02240F92990029EB3E /* Lecture */ = {
+			isa = PBXGroup;
+			children = (
+				91CE2517240E62510014DA5F /* LectureCell.xib */,
+				91CE251A240E62660014DA5F /* LectureCell.swift */,
+				914FDB05240F93220029EB3E /* LectureSectionHeader.xib */,
+				914FDB03240F92BD0029EB3E /* LectureSectionHeader.swift */,
+			);
+			path = Lecture;
+			sourceTree = "<group>";
+		};
 		91CE24CC240E2EE40014DA5F = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +174,7 @@
 		91CE24FC240E2FD90014DA5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				91CE2519240E62550014DA5F /* Cells */,
+				914FDB02240F92990029EB3E /* Lecture */,
 				91CE24FD240E2FF70014DA5F /* GreetingView.xib */,
 				91CE2502240E312C0014DA5F /* GreetingView.swift */,
 				91CE2504240E330D0014DA5F /* DashboardViewController.swift */,
@@ -186,15 +201,6 @@
 				91CE251C240E69C70014DA5F /* LectureUseCase.swift */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		91CE2519240E62550014DA5F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				91CE2517240E62510014DA5F /* LectureCell.xib */,
-				91CE251A240E62660014DA5F /* LectureCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		91CE251E240E6C7C0014DA5F /* Utilities */ = {
@@ -294,6 +300,7 @@
 				91CE24FE240E2FF70014DA5F /* GreetingView.xib in Resources */,
 				91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */,
 				91CE24E0240E2EE40014DA5F /* Dashboard.storyboard in Resources */,
+				914FDB06240F93220029EB3E /* LectureSectionHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */,
+				914FDB04240F92BD0029EB3E /* LectureSectionHeader.swift in Sources */,
 				91369B1A240E853900135A30 /* Constants.swift in Sources */,
 				91CE2507240E366D0014DA5F /* ColorPalette.swift in Sources */,
 				91369B12240E817D00135A30 /* ReusableView.swift in Sources */,

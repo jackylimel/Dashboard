@@ -48,6 +48,10 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
         return lectureUseCase.getLectures(within: 0).count
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(ofType: LectureCell.self)
         return cell
@@ -57,5 +61,19 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
         return 100
     }
 
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            return LectureSectionHeader()
+        }
+        return nil
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 30
+        }
+
+        return 0
+    }
 
 }
