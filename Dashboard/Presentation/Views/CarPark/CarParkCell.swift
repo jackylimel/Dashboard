@@ -1,5 +1,5 @@
 //
-//  ShuttleBusCell.swift
+//  CarParkCell.swift
 //  Dashboard
 //
 //  Created by Jacky Li on 4/3/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShuttleBusCell: UITableViewCell {
+class CarParkCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
 

@@ -12,8 +12,8 @@
 		91369B1A240E853900135A30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B19240E853900135A30 /* Constants.swift */; };
 		914FDB04240F92BD0029EB3E /* LectureSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB03240F92BD0029EB3E /* LectureSectionHeader.swift */; };
 		914FDB06240F93220029EB3E /* LectureSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB05240F93220029EB3E /* LectureSectionHeader.xib */; };
-		914FDB09240F9F300029EB3E /* ShuttleBusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB08240F9F300029EB3E /* ShuttleBusCell.xib */; };
-		914FDB0B240F9F390029EB3E /* ShuttleBusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB0A240F9F390029EB3E /* ShuttleBusCell.swift */; };
+		914FDB09240F9F300029EB3E /* CarParkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB08240F9F300029EB3E /* CarParkCell.xib */; };
+		914FDB0B240F9F390029EB3E /* CarParkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB0A240F9F390029EB3E /* CarParkCell.swift */; };
 		914FDB0F240FA2950029EB3E /* PlainTextSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB0E240FA2950029EB3E /* PlainTextSectionHeader.swift */; };
 		914FDB11240FA34B0029EB3E /* PlainTextSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB10240FA34B0029EB3E /* PlainTextSectionHeader.xib */; };
 		914FDB13240FA5EA0029EB3E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB12240FA5EA0029EB3E /* CircleView.swift */; };
@@ -54,8 +54,8 @@
 		91369B19240E853900135A30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		914FDB03240F92BD0029EB3E /* LectureSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSectionHeader.swift; sourceTree = "<group>"; };
 		914FDB05240F93220029EB3E /* LectureSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectureSectionHeader.xib; sourceTree = "<group>"; };
-		914FDB08240F9F300029EB3E /* ShuttleBusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuttleBusCell.xib; sourceTree = "<group>"; };
-		914FDB0A240F9F390029EB3E /* ShuttleBusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusCell.swift; sourceTree = "<group>"; };
+		914FDB08240F9F300029EB3E /* CarParkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarParkCell.xib; sourceTree = "<group>"; };
+		914FDB0A240F9F390029EB3E /* CarParkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkCell.swift; sourceTree = "<group>"; };
 		914FDB0E240FA2950029EB3E /* PlainTextSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextSectionHeader.swift; sourceTree = "<group>"; };
 		914FDB10240FA34B0029EB3E /* PlainTextSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlainTextSectionHeader.xib; sourceTree = "<group>"; };
 		914FDB12240FA5EA0029EB3E /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -134,13 +134,20 @@
 			path = Lecture;
 			sourceTree = "<group>";
 		};
-		914FDB07240F9F1F0029EB3E /* ShuttleBus */ = {
+		914FDB07240F9F1F0029EB3E /* CarPark */ = {
 			isa = PBXGroup;
 			children = (
-				914FDB08240F9F300029EB3E /* ShuttleBusCell.xib */,
-				914FDB0A240F9F390029EB3E /* ShuttleBusCell.swift */,
+				914FDB08240F9F300029EB3E /* CarParkCell.xib */,
+				914FDB0A240F9F390029EB3E /* CarParkCell.swift */,
 			);
-			path = ShuttleBus;
+			path = CarPark;
+			sourceTree = "<group>";
+		};
+		914FDB14240FAC610029EB3E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		91CE24CC240E2EE40014DA5F = {
@@ -196,8 +203,9 @@
 		91CE24FC240E2FD90014DA5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				914FDB14240FAC610029EB3E /* New Group */,
 				914FDB02240F92990029EB3E /* Lecture */,
-				914FDB07240F9F1F0029EB3E /* ShuttleBus */,
+				914FDB07240F9F1F0029EB3E /* CarPark */,
 				91CE24FD240E2FF70014DA5F /* GreetingView.xib */,
 				91CE2502240E312C0014DA5F /* GreetingView.swift */,
 				91CE2504240E330D0014DA5F /* DashboardViewController.swift */,
@@ -324,7 +332,7 @@
 				91CE24FE240E2FF70014DA5F /* GreetingView.xib in Resources */,
 				91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */,
 				91CE24E0240E2EE40014DA5F /* Dashboard.storyboard in Resources */,
-				914FDB09240F9F300029EB3E /* ShuttleBusCell.xib in Resources */,
+				914FDB09240F9F300029EB3E /* CarParkCell.xib in Resources */,
 				914FDB06240F93220029EB3E /* LectureSectionHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914FDB0B240F9F390029EB3E /* ShuttleBusCell.swift in Sources */,
+				914FDB0B240F9F390029EB3E /* CarParkCell.swift in Sources */,
 				91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */,
 				914FDB04240F92BD0029EB3E /* LectureSectionHeader.swift in Sources */,
 				91369B1A240E853900135A30 /* Constants.swift in Sources */,

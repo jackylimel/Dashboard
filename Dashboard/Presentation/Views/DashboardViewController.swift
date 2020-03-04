@@ -23,7 +23,7 @@ class DashboardViewController: UIViewController {
         view.backgroundColor = ColorPalette.background
 
         tableView.register(cellType: LectureCell.self)
-        tableView.register(cellType: ShuttleBusCell.self)
+        tableView.register(cellType: CarParkCell.self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = ColorPalette.background
@@ -66,7 +66,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             return tableView.dequeueCell(ofType: LectureCell.self)
         } else {
-            return tableView.dequeueCell(ofType: ShuttleBusCell.self)
+            return tableView.dequeueCell(ofType: CarParkCell.self)
         }
     }
 
