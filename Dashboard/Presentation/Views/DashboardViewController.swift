@@ -8,13 +8,11 @@
 
 import UIKit
 
-protocol CellModel {}
-
 class DashboardViewController: UIViewController {
 
-    private let lectureUseCase = LectureUseCase()
-
     @IBOutlet weak var tableView: UITableView!
+
+    private let viewModel = DashboardViewModel()
     
     override func viewDidLoad() {
         setupNavigationBar()
@@ -52,26 +50,32 @@ class DashboardViewController: UIViewController {
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return lectureUseCase.getLectures(within: 0).count
-        } else if section == 1 {
-            return 1
-        } else {
-            return 2
-        }
+        return viewModel.data[section]?.count ?? 0
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return viewModel.data.keys.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            return tableView.dequeueCell(ofType: LectureCell.self)
+            let cell = tableView.dequeueCell(ofType: LectureCell.self)
+            if let cellModel = viewModel.data[indexPath.section]?[indexPath.row] as? LectureCell.Model {
+                cell.config(with: cellModel)
+            }
+            return cell
         } else if indexPath.section == 1 {
-            return tableView.dequeueCell(ofType: CarParkCell.self)
+            let cell = tableView.dequeueCell(ofType: CarParkCell.self)
+            if let cellModel = viewModel.data[indexPath.section]?[indexPath.row] as? CarParkCell.Model {
+                cell.config(with: cellModel)
+            }
+            return cell
         } else {
-            return tableView.dequeueCell(ofType: ShuttleBusCell.self)
+            let cell = tableView.dequeueCell(ofType: ShuttleBusCell.self)
+            if let cellModel = viewModel.data[indexPath.section]?[indexPath.row] as? ShuttleBusCell.Model {
+                cell.config(with: cellModel)
+            }
+            return cell
         }
     }
 

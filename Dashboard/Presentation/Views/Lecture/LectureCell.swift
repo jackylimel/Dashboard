@@ -48,11 +48,13 @@ class LectureCell: UITableViewCell {
         nameLabel.text = model.name
         classRoomLabel.text = model.classRoom
         teacherLabel.text = model.teacher
+        horizontalSeparator.isHidden = model.hasRoundBottomCorners
+        setupCorner(with: model)
     }
 }
 
 extension LectureCell {
-    struct Model {
+    struct Model: CellModel {
         let startHour: String
         let startPeriod: String
         let endHour: String
@@ -60,6 +62,7 @@ extension LectureCell {
         let name: String
         let classRoom: String
         let teacher: String
-        let shouldShowRoundedCorner: Bool
+        let hasRoundTopCorners: Bool
+        let hasRoundBottomCorners: Bool
     }
 }

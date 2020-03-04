@@ -30,4 +30,22 @@ class ShuttleBusCell: UITableViewCell {
 
         separator.backgroundColor = ColorPalette.separator
     }
+
+    func config(with model: Model) {
+        fromLabel.text = model.from
+        toLabel.text = model.to
+        minutesLabel.text = model.minutes
+        separator.isHidden = model.hasRoundBottomCorners
+        setupCorner(with: model)
+    }
+}
+
+extension ShuttleBusCell {
+    struct Model: CellModel {
+        let from: String
+        let to: String
+        let minutes: String
+        let hasRoundTopCorners: Bool
+        let hasRoundBottomCorners: Bool
+    }
 }

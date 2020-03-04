@@ -70,6 +70,13 @@
                         <constraint firstItem="Hjv-xF-hF0" firstAttribute="width" secondItem="cet-X2-JCU" secondAttribute="width" id="zjb-sH-ldV"/>
                     </constraints>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ah9-Uo-ONO" userLabel="separator">
+                    <rect key="frame" x="0.0" y="98" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UIx-RU-7iY"/>
+                    </constraints>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clayton live feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKs-8U-fcf" userLabel="name">
                     <rect key="frame" x="20" y="39.5" width="126.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -82,14 +89,18 @@
                 <constraint firstItem="QsW-qc-QJF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DAV-0J-ROq"/>
                 <constraint firstItem="ulx-wY-fhA" firstAttribute="leading" secondItem="QsW-qc-QJF" secondAttribute="trailing" constant="20" id="MGH-iM-fF3"/>
                 <constraint firstItem="YKs-8U-fcf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Njr-vA-HWF"/>
+                <constraint firstItem="Ah9-Uo-ONO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PaA-fD-j5F"/>
                 <constraint firstAttribute="trailing" secondItem="ulx-wY-fhA" secondAttribute="trailing" constant="20" id="eij-36-Zty"/>
+                <constraint firstItem="Ah9-Uo-ONO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="iP7-0I-e8o"/>
                 <constraint firstItem="YKs-8U-fcf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jdf-pu-Bjw"/>
+                <constraint firstAttribute="bottom" secondItem="Ah9-Uo-ONO" secondAttribute="bottom" id="vhZ-9h-otY"/>
                 <constraint firstItem="ulx-wY-fhA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xa9-Y5-Gfj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="countLabel" destination="ulx-wY-fhA" id="Ijt-1E-oSd"/>
                 <outlet property="nameLabel" destination="YKs-8U-fcf" id="ak3-pA-v2d"/>
+                <outlet property="separator" destination="Ah9-Uo-ONO" id="AFh-jN-MAP"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="117.52232142857142"/>
         </view>
