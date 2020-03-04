@@ -14,20 +14,64 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="645" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulx-wY-fhA" userLabel="count">
-                    <rect key="frame" x="362" y="39" width="32" height="21"/>
+                    <rect key="frame" x="362.5" y="39.5" width="31.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QsW-qc-QJF">
-                    <rect key="frame" x="167" y="39.5" width="175" height="20"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QsW-qc-QJF">
+                    <rect key="frame" x="242.5" y="44.5" width="100" height="10"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cet-X2-JCU" userLabel="blue" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="AGR-pQ-tuu"/>
+                                <constraint firstAttribute="width" constant="10" id="vnw-L4-0hL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-I2-u2M" userLabel="purple" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whr-Zw-bH9" userLabel="brown" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="30" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-xF-hF0" userLabel="red" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="45" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP5-3L-cPN" userLabel="yellow" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="60" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhn-sA-P0L" userLabel="green" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="75" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-YD-Jcc" userLabel="orange" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
+                            <rect key="frame" x="90" y="0.0" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" constant="175" id="EOM-Hb-HeH"/>
-                        <constraint firstAttribute="height" constant="20" id="HC2-ar-AT6"/>
+                        <constraint firstItem="iP5-3L-cPN" firstAttribute="height" secondItem="cet-X2-JCU" secondAttribute="height" id="4uF-go-XoT"/>
+                        <constraint firstItem="vhn-sA-P0L" firstAttribute="width" secondItem="cet-X2-JCU" secondAttribute="width" id="8qS-XW-Emr"/>
+                        <constraint firstAttribute="width" constant="100" id="EOM-Hb-HeH"/>
+                        <constraint firstItem="gYV-I2-u2M" firstAttribute="width" secondItem="cet-X2-JCU" secondAttribute="width" id="GLp-F6-6vz"/>
+                        <constraint firstAttribute="height" constant="10" id="HC2-ar-AT6"/>
+                        <constraint firstItem="Hjv-xF-hF0" firstAttribute="height" secondItem="cet-X2-JCU" secondAttribute="height" id="Jx1-68-4Yd"/>
+                        <constraint firstItem="vhn-sA-P0L" firstAttribute="height" secondItem="cet-X2-JCU" secondAttribute="height" id="Qt0-6l-81y"/>
+                        <constraint firstItem="PA1-YD-Jcc" firstAttribute="height" secondItem="cet-X2-JCU" secondAttribute="height" id="S4v-tz-oou"/>
+                        <constraint firstItem="gYV-I2-u2M" firstAttribute="height" secondItem="cet-X2-JCU" secondAttribute="height" id="c1y-OL-pli"/>
+                        <constraint firstItem="iP5-3L-cPN" firstAttribute="width" secondItem="cet-X2-JCU" secondAttribute="width" id="tWR-Vc-6mi"/>
+                        <constraint firstItem="PA1-YD-Jcc" firstAttribute="width" secondItem="cet-X2-JCU" secondAttribute="width" id="yhN-2d-LXa"/>
+                        <constraint firstItem="Hjv-xF-hF0" firstAttribute="width" secondItem="cet-X2-JCU" secondAttribute="width" id="zjb-sH-ldV"/>
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clayton live feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKs-8U-fcf" userLabel="name">
-                    <rect key="frame" x="20" y="39" width="127" height="21"/>
+                    <rect key="frame" x="20" y="39.5" width="126.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -36,8 +80,8 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="QsW-qc-QJF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DAV-0J-ROq"/>
+                <constraint firstItem="ulx-wY-fhA" firstAttribute="leading" secondItem="QsW-qc-QJF" secondAttribute="trailing" constant="20" id="MGH-iM-fF3"/>
                 <constraint firstItem="YKs-8U-fcf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Njr-vA-HWF"/>
-                <constraint firstItem="QsW-qc-QJF" firstAttribute="leading" secondItem="YKs-8U-fcf" secondAttribute="trailing" constant="20" id="Utc-h4-qxi"/>
                 <constraint firstAttribute="trailing" secondItem="ulx-wY-fhA" secondAttribute="trailing" constant="20" id="eij-36-Zty"/>
                 <constraint firstItem="YKs-8U-fcf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jdf-pu-Bjw"/>
                 <constraint firstItem="ulx-wY-fhA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xa9-Y5-Gfj"/>
