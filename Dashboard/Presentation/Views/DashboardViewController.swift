@@ -8,6 +8,8 @@
 
 import UIKit
 
+protocol CellModel {}
+
 class DashboardViewController: UIViewController {
 
     private let lectureUseCase = LectureUseCase()
@@ -21,6 +23,7 @@ class DashboardViewController: UIViewController {
         view.backgroundColor = ColorPalette.background
 
         tableView.register(cellType: LectureCell.self)
+        tableView.register(cellType: ShuttleBusCell.self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = ColorPalette.background
@@ -48,35 +51,44 @@ class DashboardViewController: UIViewController {
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lectureUseCase.getLectures(within: 0).count
+        if section == 0 {
+            return lectureUseCase.getLectures(within: 0).count
+        } else {
+            return 1
+        }
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueCell(ofType: LectureCell.self)
-        return cell
+        if indexPath.section == 0 {
+            return tableView.dequeueCell(ofType: LectureCell.self)
+        } else {
+            return tableView.dequeueCell(ofType: ShuttleBusCell.self)
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        if indexPath.section == 0 {
+            return 100
+        } else {
+            return 50
+        }
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
             return LectureSectionHeader()
         }
-        return nil
+        let plainSectionHeader = PlainTextSectionHeader()
+        plainSectionHeader.configure(with: "Avaiable car parks")
+        return plainSectionHeader
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0 {
-            return 30
-        }
-
-        return 0
+        return 30
     }
 
 }
