@@ -24,6 +24,7 @@ class DashboardViewController: UIViewController {
 
         tableView.register(cellType: LectureCell.self)
         tableView.register(cellType: CarParkCell.self)
+        tableView.register(cellType: ShuttleBusCell.self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = ColorPalette.background
@@ -53,20 +54,24 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return lectureUseCase.getLectures(within: 0).count
-        } else {
+        } else if section == 1 {
             return 1
+        } else {
+            return 2
         }
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             return tableView.dequeueCell(ofType: LectureCell.self)
-        } else {
+        } else if indexPath.section == 1 {
             return tableView.dequeueCell(ofType: CarParkCell.self)
+        } else {
+            return tableView.dequeueCell(ofType: ShuttleBusCell.self)
         }
     }
 
@@ -83,7 +88,8 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
             return LectureSectionHeader()
         }
         let plainSectionHeader = PlainTextSectionHeader()
-        plainSectionHeader.configure(with: "Avaiable car parks")
+        let title = section == 1 ? "Avaiable car parks" : "Intercampus Shuttle Bus"
+        plainSectionHeader.configure(with: title)
         return plainSectionHeader
     }
 

@@ -17,6 +17,8 @@
 		914FDB0F240FA2950029EB3E /* PlainTextSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB0E240FA2950029EB3E /* PlainTextSectionHeader.swift */; };
 		914FDB11240FA34B0029EB3E /* PlainTextSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB10240FA34B0029EB3E /* PlainTextSectionHeader.xib */; };
 		914FDB13240FA5EA0029EB3E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB12240FA5EA0029EB3E /* CircleView.swift */; };
+		914FDB16240FACE60029EB3E /* ShuttleBusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB15240FACE60029EB3E /* ShuttleBusCell.xib */; };
+		914FDB18240FACF10029EB3E /* ShuttleBusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB17240FACF10029EB3E /* ShuttleBusCell.swift */; };
 		91CE24D9240E2EE40014DA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24D8240E2EE40014DA5F /* AppDelegate.swift */; };
 		91CE24E0240E2EE40014DA5F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24DE240E2EE40014DA5F /* Dashboard.storyboard */; };
 		91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E1240E2EE50014DA5F /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		914FDB0E240FA2950029EB3E /* PlainTextSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextSectionHeader.swift; sourceTree = "<group>"; };
 		914FDB10240FA34B0029EB3E /* PlainTextSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlainTextSectionHeader.xib; sourceTree = "<group>"; };
 		914FDB12240FA5EA0029EB3E /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		914FDB15240FACE60029EB3E /* ShuttleBusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuttleBusCell.xib; sourceTree = "<group>"; };
+		914FDB17240FACF10029EB3E /* ShuttleBusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusCell.swift; sourceTree = "<group>"; };
 		91CE24D5240E2EE40014DA5F /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CE24D8240E2EE40014DA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91CE24DF240E2EE40014DA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
@@ -143,11 +147,13 @@
 			path = CarPark;
 			sourceTree = "<group>";
 		};
-		914FDB14240FAC610029EB3E /* New Group */ = {
+		914FDB14240FAC610029EB3E /* ShuttleBus */ = {
 			isa = PBXGroup;
 			children = (
+				914FDB15240FACE60029EB3E /* ShuttleBusCell.xib */,
+				914FDB17240FACF10029EB3E /* ShuttleBusCell.swift */,
 			);
-			path = "New Group";
+			path = ShuttleBus;
 			sourceTree = "<group>";
 		};
 		91CE24CC240E2EE40014DA5F = {
@@ -203,7 +209,7 @@
 		91CE24FC240E2FD90014DA5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				914FDB14240FAC610029EB3E /* New Group */,
+				914FDB14240FAC610029EB3E /* ShuttleBus */,
 				914FDB02240F92990029EB3E /* Lecture */,
 				914FDB07240F9F1F0029EB3E /* CarPark */,
 				91CE24FD240E2FF70014DA5F /* GreetingView.xib */,
@@ -326,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914FDB16240FACE60029EB3E /* ShuttleBusCell.xib in Resources */,
 				91CE2518240E62510014DA5F /* LectureCell.xib in Resources */,
 				91CE24E5240E2EE50014DA5F /* LaunchScreen.storyboard in Resources */,
 				914FDB11240FA34B0029EB3E /* PlainTextSectionHeader.xib in Resources */,
@@ -366,6 +373,7 @@
 				91CE251B240E62660014DA5F /* LectureCell.swift in Sources */,
 				91CE2510240E504D0014DA5F /* Lecture.swift in Sources */,
 				91CE2503240E312C0014DA5F /* GreetingView.swift in Sources */,
+				914FDB18240FACF10029EB3E /* ShuttleBusCell.swift in Sources */,
 				91CE2515240E60F20014DA5F /* DashboardViewModel.swift in Sources */,
 				914FDB13240FA5EA0029EB3E /* CircleView.swift in Sources */,
 				914FDB0F240FA2950029EB3E /* PlainTextSectionHeader.swift in Sources */,
