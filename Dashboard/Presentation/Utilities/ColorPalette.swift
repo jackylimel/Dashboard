@@ -17,7 +17,11 @@ struct ColorPalette {
         return UIColor(red: 84.0 / 255.0, green: 132.0 / 255.0, blue: 181.0 / 255.0, alpha: 1.0)
     }
 
-    static var veryLight: UIColor {
+    static var separator: UIColor {
         return UIColor(white: 209.0 / 255.0, alpha: 0.4)
+    }
+
+    static var background: UIColor {
+        return UIColor(red: 240.0 / 255.0, green: 240.0 / 255.0, blue: 240.0 / 255.0, alpha: 1.0)
     }
 }

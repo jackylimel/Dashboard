@@ -18,9 +18,12 @@ class DashboardViewController: UIViewController {
         setupNavigationBar()
         super.viewDidLoad()
 
+        view.backgroundColor = ColorPalette.background
+
         tableView.register(cellType: LectureCell.self)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = ColorPalette.background
     }
 
     private func setupNavigationBar() {

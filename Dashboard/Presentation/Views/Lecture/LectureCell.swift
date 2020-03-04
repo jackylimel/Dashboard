@@ -27,7 +27,7 @@ class LectureCell: UITableViewCell {
 
     private func setupStyle() {
         verticalSeparator.backgroundColor = ColorPalette.blue
-        horizontalSeparator.backgroundColor = ColorPalette.veryLight
+        horizontalSeparator.backgroundColor = ColorPalette.separator
 
         startHourLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         startPeriodLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
