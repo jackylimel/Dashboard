@@ -26,6 +26,8 @@ class LectureCell: UITableViewCell {
     }
 
     private func setupStyle() {
+        selectionStyle = .none
+        
         verticalSeparator.backgroundColor = ColorPalette.blue
         horizontalSeparator.backgroundColor = ColorPalette.separator
 

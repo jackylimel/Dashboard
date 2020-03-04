@@ -18,6 +18,8 @@ class CarParkCell: UITableViewCell {
     }
 
     private func setupStyle() {
+        selectionStyle = .none
+        
         nameLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         countLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         countLabel.textColor = ColorPalette.blue

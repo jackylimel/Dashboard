@@ -20,6 +20,7 @@ class ShuttleBusCell: UITableViewCell {
     }
 
     private func setupStyle() {
+        selectionStyle = .none
 
         fromLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         toLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
