@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtX-hw-e6Q">
-                    <rect key="frame" x="5" y="55" width="42" height="21"/>
+                    <rect key="frame" x="5" y="50" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -26,7 +26,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="VtX-hw-e6Q" secondAttribute="bottom" constant="5" id="1r1-fj-bjJ"/>
+                <constraint firstAttribute="bottom" secondItem="VtX-hw-e6Q" secondAttribute="bottom" constant="10" id="1r1-fj-bjJ"/>
                 <constraint firstItem="VtX-hw-e6Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="g32-t6-2Gj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

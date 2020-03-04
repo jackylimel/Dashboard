@@ -11,9 +11,6 @@ import UIKit
 class CircleView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = bounds.size.width / 2
-        layer.masksToBounds = true
-        layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner,
-                               .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        roundFourCorners(radius: bounds.size.width / 2)
     }
 }

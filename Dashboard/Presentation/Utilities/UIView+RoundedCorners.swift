@@ -20,4 +20,11 @@ extension UIView {
         clipsToBounds = true
         layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
+
+    func roundFourCorners(radius: CGFloat = Constants.roundedCornerRadius) {
+        layer.cornerRadius = CGFloat(radius)
+        clipsToBounds = true
+        layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner,
+                               .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+    }
 }

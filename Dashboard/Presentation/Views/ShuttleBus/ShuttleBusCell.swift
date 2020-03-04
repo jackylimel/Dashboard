@@ -21,5 +21,7 @@ class ShuttleBusCell: UITableViewCell {
         nameLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         countLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         countLabel.textColor = ColorPalette.blue
+
+        roundFourCorners()
     }
 }
