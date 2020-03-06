@@ -26,6 +26,12 @@ class DashboardViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = ColorPalette.background
+
+        viewModel.delegate = self
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.loadData()
     }
 
     private func setupNavigationBar() {
@@ -45,6 +51,12 @@ class DashboardViewController: UIViewController {
         let buttonItem = UIBarButtonItem(customView: button)
         buttonItem.tintColor = .black
         return buttonItem
+    }
+}
+
+extension DashboardViewController: DashboardViewModelDelegate {
+    func dataLoaded(cellType: CellType) {
+        tableView.reloadData()
     }
 }
 
@@ -100,5 +112,4 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
-
 }
