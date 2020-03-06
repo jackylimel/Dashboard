@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5ED1B02CCD38469C1058A490 /* Pods_DashboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3F907ECF56E072B84DD8EA /* Pods_DashboardTests.framework */; };
 		682EA90792202F832E4F3D77 /* Pods_Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998F168125B64F8663F8759D /* Pods_Dashboard.framework */; };
 		913691B924120A2A002E45A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913691B824120A2A002E45A1 /* GoogleService-Info.plist */; };
+		913691BC2412582F002E45A1 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BB2412582F002E45A1 /* FirebaseRepository.swift */; };
 		91369B12240E817D00135A30 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B11240E817D00135A30 /* ReusableView.swift */; };
 		91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */; };
 		91369B1A240E853900135A30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B19240E853900135A30 /* Constants.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		27AEDDA567A7C07BE098A173 /* Pods-Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.release.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.release.xcconfig"; sourceTree = "<group>"; };
 		913691B824120A2A002E45A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		913691BB2412582F002E45A1 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
 		91369B11240E817D00135A30 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
 		91369B19240E853900135A30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -139,8 +141,17 @@
 				A73AF32C78639B48B53636A8 /* Pods-DashboardTests.debug.xcconfig */,
 				EFEB818E2B2032EF85477369 /* Pods-DashboardTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		913691BA2412581C002E45A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91CE250B240E4EDC0014DA5F /* ShuttleBus.swift */,
+				91CE250D240E50290014DA5F /* CarPark.swift */,
+				91CE250F240E504D0014DA5F /* Lecture.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		91369B10240E817D00135A30 /* Custom Control */ = {
@@ -264,9 +275,8 @@
 		91CE250A240E4EB60014DA5F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				91CE250B240E4EDC0014DA5F /* ShuttleBus.swift */,
-				91CE250D240E50290014DA5F /* CarPark.swift */,
-				91CE250F240E504D0014DA5F /* Lecture.swift */,
+				913691BA2412581C002E45A1 /* Model */,
+				913691BB2412582F002E45A1 /* FirebaseRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -488,6 +498,7 @@
 				914FDB18240FACF10029EB3E /* ShuttleBusCell.swift in Sources */,
 				91CE2515240E60F20014DA5F /* DashboardViewModel.swift in Sources */,
 				914FDB13240FA5EA0029EB3E /* CircleView.swift in Sources */,
+				913691BC2412582F002E45A1 /* FirebaseRepository.swift in Sources */,
 				914FDB0F240FA2950029EB3E /* PlainTextSectionHeader.swift in Sources */,
 				91CE2513240E51010014DA5F /* ShuttleBusUseCase.swift in Sources */,
 				91CE2520240E6C9F0014DA5F /* UITableView+Dequeue.swift in Sources */,

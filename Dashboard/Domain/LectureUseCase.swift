@@ -9,6 +9,8 @@
 import Foundation
 
 class LectureUseCase {
+    private let repo = FirebaseRepository()
+    
     private let lectures: [Lecture] = [
         Lecture(name: "FIT1031 Lecture 01", teacher: "Arun Kongaurthu", classroom: "S1, 13 Collage Walk, Clayton", start: "08:00", end: "10:00"),
         Lecture(name: "FIT1031 Lecture 02", teacher: "Arun Kongaurthu", classroom: "S2, 13 Collage Walk, Clayton", start: "09:00", end: "11:00"),
@@ -18,5 +20,15 @@ class LectureUseCase {
 
     func getLectures(within minutes: Int) -> [Lecture] {
         return lectures
+    }
+
+    func getLectures(within minutes: Int, _ completion: @escaping ([Lecture]) -> Void) {
+        do {
+            try repo.getData(name: "lectures") { lectures in
+                completion(lectures)
+            }
+        } catch {
+            print(error)
+        }
     }
 }

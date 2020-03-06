@@ -1,5 +1,5 @@
 //
-//  ShuttleBus.swift
+//  CarPark.swift
 //  Dashboard
 //
 //  Created by Jacky Li on 3/3/20.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct ShuttleBus {
-    let from: String
-    let to: String
-    let time: String
+struct CarPark: Codable {
+    let name: String
+    let availableCount: Int
 }
