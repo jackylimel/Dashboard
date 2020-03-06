@@ -33,17 +33,17 @@ class DashboardViewModel {
     lazy var carParkUseCase = CarParkUseCase()
 
     func loadData() {
-        lectureUseCase.getLectures(within: 0) { [unowned self] lectures in
+        lectureUseCase.getLectures(limited: 3) { [unowned self] lectures in
             self.mapToCellModel(lectures)
             self.delegate?.dataLoaded(cellType: .lecture)
         }
 
-        shuttleBusUseCase.getBuses(within: 0) { [unowned self] shuttleBuses in
+        shuttleBusUseCase.getBuses(limited: 2) { [unowned self] shuttleBuses in
             self.mapToCellModel(shuttleBuses)
             self.delegate?.dataLoaded(cellType: .shuttleBus)
         }
 
-        carParkUseCase.getCarParks() { [unowned self] carParks in
+        carParkUseCase.getCarParks(limited: 3) { [unowned self] carParks in
             self.mapToCellModel(carParks)
             self.delegate?.dataLoaded(cellType: .carPark)
         }

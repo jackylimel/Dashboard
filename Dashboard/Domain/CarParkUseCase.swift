@@ -11,13 +11,21 @@ import Foundation
 class CarParkUseCase {
     private let repo = FirebaseRepository()
 
-    func getCarParks(_ completion: @escaping ([CarPark]) -> Void) {
+    func getCarParks(limited by: Int, completion: @escaping ([CarPark]) -> Void) {
         do {
-            try repo.getData(name: "carparks") { carParks in
-                completion(carParks)
+            try repo.getData(name: "carparks") { [unowned self] carParks in
+                completion(self.filter(carParks: carParks, limited: by))
             }
         } catch {
             print(error)
         }
+    }
+
+    private func filter(carParks: [CarPark], limited by: Int) -> [CarPark] {
+        let result = carParks.sorted(by: { a, b in
+            return a.availableCount < b.availableCount
+        }).prefix(by)
+
+        return Array(result)
     }
 }

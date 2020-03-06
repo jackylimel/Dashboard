@@ -20,7 +20,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QsW-qc-QJF">
-                    <rect key="frame" x="242.5" y="44.5" width="100" height="10"/>
+                    <rect key="frame" x="244" y="44.5" width="100" height="10"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cet-X2-JCU" userLabel="blue" customClass="CircleView" customModule="Dashboard" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -71,7 +71,7 @@
                     </constraints>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ah9-Uo-ONO" userLabel="separator">
-                    <rect key="frame" x="0.0" y="98" width="414" height="1"/>
+                    <rect key="frame" x="20" y="98" width="374" height="1"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="UIx-RU-7iY"/>
@@ -86,12 +86,13 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Ah9-Uo-ONO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="8q4-st-VLE"/>
                 <constraint firstItem="QsW-qc-QJF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DAV-0J-ROq"/>
-                <constraint firstItem="ulx-wY-fhA" firstAttribute="leading" secondItem="QsW-qc-QJF" secondAttribute="trailing" constant="20" id="MGH-iM-fF3"/>
+                <constraint firstAttribute="trailing" secondItem="Ah9-Uo-ONO" secondAttribute="trailing" constant="20" id="HTK-dp-ofs"/>
+                <constraint firstAttribute="trailing" secondItem="QsW-qc-QJF" secondAttribute="trailing" constant="70" id="Lf5-NA-h0s"/>
                 <constraint firstItem="YKs-8U-fcf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Njr-vA-HWF"/>
                 <constraint firstItem="Ah9-Uo-ONO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PaA-fD-j5F"/>
                 <constraint firstAttribute="trailing" secondItem="ulx-wY-fhA" secondAttribute="trailing" constant="20" id="eij-36-Zty"/>
-                <constraint firstItem="Ah9-Uo-ONO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="iP7-0I-e8o"/>
                 <constraint firstItem="YKs-8U-fcf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jdf-pu-Bjw"/>
                 <constraint firstAttribute="bottom" secondItem="Ah9-Uo-ONO" secondAttribute="bottom" id="vhZ-9h-otY"/>
                 <constraint firstItem="ulx-wY-fhA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xa9-Y5-Gfj"/>
