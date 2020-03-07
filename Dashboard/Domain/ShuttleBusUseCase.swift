@@ -13,7 +13,7 @@ class ShuttleBusUseCase {
 
     func getBuses(limited by: Int, completion: @escaping ([ShuttleBus]) -> Void) {
         do {
-            try repo.getData(name: "shuttleBuses") { buses in
+            try repo.getData(name: FirebaseCollection.shuttleBuses) { buses in
                 completion(self.filter(buses: buses, limited: by))
             }
         } catch {

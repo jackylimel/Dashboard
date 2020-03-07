@@ -9,12 +9,18 @@
 import Foundation
 import Firebase
 
+enum FirebaseCollection: String {
+    case lectures = "lectures"
+    case carParks = "carparks"
+    case shuttleBuses = "shuttleBuses"
+}
+
 class FirebaseRepository {
     let database = Firestore.firestore()
     let decoder = JSONDecoder()
 
-    func getData<T>(name: String, _ completion: @escaping ([T]) -> Void) throws where T: Codable {
-        database.collection(name).getDocuments { snapshot, error in
+    func getData<T>(name: FirebaseCollection, _ completion: @escaping ([T]) -> Void) throws where T: Codable {
+        database.collection(name.rawValue).getDocuments { snapshot, error in
             let lectures = snapshot?.documents.compactMap { [unowned self] (doc) -> T? in
                 guard let data = try? JSONSerialization.data(withJSONObject: doc.data(), options: []),
                     let result = try? self.decoder.decode(T.self, from: data) else {

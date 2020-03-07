@@ -13,7 +13,7 @@ class LectureUseCase {
     
     func getLectures(limited by: Int, completion: @escaping ([Lecture]) -> Void) {
         do {
-            try repo.getData(name: "lectures") { [unowned self] lectures in
+            try repo.getData(name: FirebaseCollection.lectures) { [unowned self] lectures in
                 completion(self.filter(lectures: lectures, limited: by))
             }
         } catch {

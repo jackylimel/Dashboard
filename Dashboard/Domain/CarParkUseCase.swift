@@ -13,7 +13,7 @@ class CarParkUseCase {
 
     func getCarParks(limited by: Int, completion: @escaping ([CarPark]) -> Void) {
         do {
-            try repo.getData(name: "carparks") { [unowned self] carParks in
+            try repo.getData(name: FirebaseCollection.carParks) { [unowned self] carParks in
                 completion(self.filter(carParks: carParks, limited: by))
             }
         } catch {

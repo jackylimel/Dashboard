@@ -233,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				91369B18240E84F900135A30 /* Application */,
+				91CE251E240E6C7C0014DA5F /* Utilities */,
 				91CE24FA240E2F8D0014DA5F /* Presentation */,
 				91CE2511240E50DF0014DA5F /* Domain */,
 				91CE250A240E4EB60014DA5F /* Data */,
@@ -256,7 +257,6 @@
 			children = (
 				91369B10240E817D00135A30 /* Custom Control */,
 				91CE24FC240E2FD90014DA5F /* Views */,
-				91CE251E240E6C7C0014DA5F /* Utilities */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
