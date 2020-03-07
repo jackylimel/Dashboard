@@ -9,7 +9,11 @@
 import Foundation
 
 class LectureUseCase {
-    private let repo = FirebaseRepository()
+    private let repo: Repository
+
+    init(repo: Repository) {
+        self.repo = repo
+    }
     
     func getLectures(limited by: Int, completion: @escaping ([Lecture]) -> Void) {
         do {

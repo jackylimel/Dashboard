@@ -28,9 +28,10 @@ class DashboardViewModel {
     var data: [Int: [CellModel]] = [:]
     weak var delegate: DashboardViewModelDelegate?
 
-    lazy var lectureUseCase = LectureUseCase()
-    lazy var shuttleBusUseCase = ShuttleBusUseCase()
-    lazy var carParkUseCase = CarParkUseCase()
+    lazy var repo = FirebaseRepository()
+    lazy var lectureUseCase = LectureUseCase(repo: repo)
+    lazy var shuttleBusUseCase = ShuttleBusUseCase(repo: repo)
+    lazy var carParkUseCase = CarParkUseCase(repo: repo)
 
     func loadData() {
         lectureUseCase.getLectures(limited: Constants.numberOfLectures) { [unowned self] lectures in

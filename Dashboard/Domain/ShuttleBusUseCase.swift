@@ -9,7 +9,11 @@
 import Foundation
 
 class ShuttleBusUseCase {
-    private let repo = FirebaseRepository()
+    private let repo: Repository
+
+    init(repo: Repository) {
+        self.repo = repo
+    }
 
     func getBuses(limited by: Int, completion: @escaping ([ShuttleBus]) -> Void) {
         do {

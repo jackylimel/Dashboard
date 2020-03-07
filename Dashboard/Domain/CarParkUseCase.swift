@@ -9,7 +9,11 @@
 import Foundation
 
 class CarParkUseCase {
-    private let repo = FirebaseRepository()
+    private let repo: Repository
+
+    init(repo: Repository) {
+        self.repo = repo
+    }
 
     func getCarParks(limited by: Int, completion: @escaping ([CarPark]) -> Void) {
         do {

@@ -15,7 +15,11 @@ enum FirebaseCollection: String {
     case shuttleBuses = "shuttleBuses"
 }
 
-class FirebaseRepository {
+protocol Repository {
+    func getData<T>(name: FirebaseCollection, _ completion: @escaping ([T]) -> Void) throws where T: Codable
+}
+
+class FirebaseRepository: Repository {
     let database = Firestore.firestore()
     let decoder = JSONDecoder()
 
