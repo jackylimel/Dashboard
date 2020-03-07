@@ -9,8 +9,6 @@ target 'Dashboard' do
   pod 'Firebase/Firestore'
 
   target 'DashboardTests' do
-    inherit! :search_paths
-    # Pods for testing
   end
 
 end

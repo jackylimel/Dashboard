@@ -15,19 +15,19 @@ class ShuttleBusUseCase {
         self.repo = repo
     }
 
-    func getBuses(limited by: Int, completion: @escaping ([ShuttleBus]) -> Void) {
+    func getBuses(limited by: Int, laterThan time: Date = Date(), completion: @escaping ([ShuttleBus]) -> Void) {
         do {
             try repo.getData(name: FirebaseCollection.shuttleBuses) { buses in
-                completion(self.filter(buses: buses, limited: by))
+                completion(self.filter(buses: buses, limited: by, laterThan: time))
             }
         } catch {
             print(error)
         }
     }
 
-    private func filter(buses: [ShuttleBus], limited by: Int) -> [ShuttleBus] {
+    private func filter(buses: [ShuttleBus], limited by: Int, laterThan time: Date) -> [ShuttleBus] {
         let result = buses.filter { bus in
-            return bus.minutesForNow > 0
+            return bus.minutesFrom(baseTime: time) > 0
         }.sorted(by: { a, b in
             return a.time < b.time
         }).prefix(by)

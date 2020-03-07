@@ -15,8 +15,8 @@ struct Lecture: Codable {
     let start: String
     let end: String
 
-    var startMinutesForNow: Int {
-        return Calendar.current.minutes(from: Date(), to: start.timeInHourAndMinute())
+    func startMinutesFrom(baseTime: Date = Date()) -> Int {
+        Calendar.current.minutes(from: baseTime, to: start.timeInHourAndMinute())
     }
 
     var startPeriod: String {

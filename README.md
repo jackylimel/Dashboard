@@ -28,7 +28,9 @@ The app uses 3 layer design as illustrated below - black arrow shows how the mes
 
 The data is provided by Firebase and is generated using `index.js`. 23 lectures and 23 * 4 = 92 buses have been feeded into the Firebase database, so that unless you run the app at the midnight, you will always see some lectures and buses in the app.
 
-To simplify the date parsing logic, I'm just using a simple format of "hh:mm" for the bus time, lecture start time, and lecture end time.
+To simplify the date parsing logic, I'm just using a simple format of "hh:mm" for the bus time, lecture start time, and lecture end time. So only the lectures & buses within the current day will be shown, also there is no UTC & timezone calculation involved.
+
+Please note that there is no data validation, I just assume everything stored in the database are in expected format.
 
 ### Domain
 

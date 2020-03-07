@@ -1,5 +1,5 @@
 //
-//  String+HourAndMinute.swift
+//  String+Time.swift
 //  Dashboard
 //
 //  Created by Jacky Li on 7/3/20.

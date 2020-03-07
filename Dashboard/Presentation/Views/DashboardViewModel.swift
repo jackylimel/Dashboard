@@ -68,7 +68,7 @@ class DashboardViewModel {
         self.data[CellType.shuttleBus.rawValue] = shuttleBuses.enumerated().map { index, shuttleBus -> ShuttleBusCell.Model in
             return ShuttleBusCell.Model(from: shuttleBus.from,
                                         to: shuttleBus.to,
-                                        minutes: shuttleBus.minutesForNow,
+                                        minutes: shuttleBus.minutesFrom(baseTime: Date()),
                                         hasRoundTopCorners: index == 0,
                                         hasRoundBottomCorners: index == shuttleBuses.count - 1)
         }

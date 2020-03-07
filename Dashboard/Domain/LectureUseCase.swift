@@ -15,19 +15,19 @@ class LectureUseCase {
         self.repo = repo
     }
     
-    func getLectures(limited by: Int, completion: @escaping ([Lecture]) -> Void) {
+    func getLectures(limited by: Int, laterThan time: Date = Date(), completion: @escaping ([Lecture]) -> Void) {
         do {
             try repo.getData(name: FirebaseCollection.lectures) { [unowned self] lectures in
-                completion(self.filter(lectures: lectures, limited: by))
+                completion(self.filter(lectures: lectures, limited: by, laterThan: time))
             }
         } catch {
             print(error)
         }
     }
 
-    private func filter(lectures: [Lecture], limited by: Int) -> [Lecture] {
+    private func filter(lectures: [Lecture], limited by: Int, laterThan time: Date) -> [Lecture] {
         let result = lectures.filter { lecture in
-            return lecture.startMinutesForNow > 0
+            return lecture.startMinutesFrom(baseTime: time) > 0
         }.sorted(by: { a, b in
             return a.start < b.start
         }).prefix(by)

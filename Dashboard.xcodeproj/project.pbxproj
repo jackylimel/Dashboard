@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5ED1B02CCD38469C1058A490 /* Pods_DashboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3F907ECF56E072B84DD8EA /* Pods_DashboardTests.framework */; };
+		5172443AD870C642CA03512F /* Pods_Dashboard_DashboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22CB1049BD365898887947A /* Pods_Dashboard_DashboardTests.framework */; };
 		682EA90792202F832E4F3D77 /* Pods_Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998F168125B64F8663F8759D /* Pods_Dashboard.framework */; };
 		913691B924120A2A002E45A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913691B824120A2A002E45A1 /* GoogleService-Info.plist */; };
 		913691BC2412582F002E45A1 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BB2412582F002E45A1 /* FirebaseRepository.swift */; };
-		913691C024130BA2002E45A1 /* String+TimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BF24130BA2002E45A1 /* String+TimeExtension.swift */; };
+		913691C024130BA2002E45A1 /* String+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BF24130BA2002E45A1 /* String+Time.swift */; };
 		913691C224130EA7002E45A1 /* Calendar+Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691C124130EA7002E45A1 /* Calendar+Difference.swift */; };
 		91369B12240E817D00135A30 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B11240E817D00135A30 /* ReusableView.swift */; };
 		91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */; };
@@ -31,7 +31,7 @@
 		91CE24E0240E2EE40014DA5F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24DE240E2EE40014DA5F /* Dashboard.storyboard */; };
 		91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E1240E2EE50014DA5F /* Assets.xcassets */; };
 		91CE24E5240E2EE50014DA5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E3240E2EE50014DA5F /* LaunchScreen.storyboard */; };
-		91CE24F0240E2EE60014DA5F /* DashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24EF240E2EE60014DA5F /* DashboardTests.swift */; };
+		91CE24F0240E2EE60014DA5F /* CalendarExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24EF240E2EE60014DA5F /* CalendarExtensionSpec.swift */; };
 		91CE24FE240E2FF70014DA5F /* GreetingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24FD240E2FF70014DA5F /* GreetingView.xib */; };
 		91CE2503240E312C0014DA5F /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2502240E312C0014DA5F /* GreetingView.swift */; };
 		91CE2505240E330D0014DA5F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2504240E330D0014DA5F /* DashboardViewController.swift */; };
@@ -46,6 +46,11 @@
 		91CE251B240E62660014DA5F /* LectureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE251A240E62660014DA5F /* LectureCell.swift */; };
 		91CE251D240E69C70014DA5F /* LectureUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE251C240E69C70014DA5F /* LectureUseCase.swift */; };
 		91CE2520240E6C9F0014DA5F /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE251F240E6C9F0014DA5F /* UITableView+Dequeue.swift */; };
+		91EBB5102413967A003E091A /* StringExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBB50F2413967A003E091A /* StringExtensionSpec.swift */; };
+		91EBB514241396AA003E091A /* CarParkUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBB513241396AA003E091A /* CarParkUseCaseSpec.swift */; };
+		91EBB516241396CF003E091A /* ShuttleBusUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBB515241396CF003E091A /* ShuttleBusUseCase.swift */; };
+		91EBB518241396E3003E091A /* LectureUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBB517241396E3003E091A /* LectureUseCaseSpec.swift */; };
+		91EBB51A24139C9C003E091A /* StubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBB51924139C9C003E091A /* StubRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +65,11 @@
 
 /* Begin PBXFileReference section */
 		27AEDDA567A7C07BE098A173 /* Pods-Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.release.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.release.xcconfig"; sourceTree = "<group>"; };
+		2E6CBCB5FBE5767AA59D852E /* Pods-Dashboard-DashboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard-DashboardTests.debug.xcconfig"; path = "Target Support Files/Pods-Dashboard-DashboardTests/Pods-Dashboard-DashboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		876967BC54F0F2ABFD38D467 /* Pods-Dashboard-DashboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard-DashboardTests.release.xcconfig"; path = "Target Support Files/Pods-Dashboard-DashboardTests/Pods-Dashboard-DashboardTests.release.xcconfig"; sourceTree = "<group>"; };
 		913691B824120A2A002E45A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		913691BB2412582F002E45A1 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
-		913691BF24130BA2002E45A1 /* String+TimeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TimeExtension.swift"; sourceTree = "<group>"; };
+		913691BF24130BA2002E45A1 /* String+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Time.swift"; sourceTree = "<group>"; };
 		913691C124130EA7002E45A1 /* Calendar+Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Difference.swift"; sourceTree = "<group>"; };
 		91369B11240E817D00135A30 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
@@ -85,7 +92,7 @@
 		91CE24E4240E2EE50014DA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91CE24E6240E2EE50014DA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91CE24EB240E2EE60014DA5F /* DashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91CE24EF240E2EE60014DA5F /* DashboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTests.swift; sourceTree = "<group>"; };
+		91CE24EF240E2EE60014DA5F /* CalendarExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExtensionSpec.swift; sourceTree = "<group>"; };
 		91CE24F1240E2EE60014DA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91CE24FD240E2FF70014DA5F /* GreetingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingView.xib; sourceTree = "<group>"; };
 		91CE2502240E312C0014DA5F /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
@@ -101,10 +108,15 @@
 		91CE251A240E62660014DA5F /* LectureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCell.swift; sourceTree = "<group>"; };
 		91CE251C240E69C70014DA5F /* LectureUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureUseCase.swift; sourceTree = "<group>"; };
 		91CE251F240E6C9F0014DA5F /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		91EBB50F2413967A003E091A /* StringExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionSpec.swift; sourceTree = "<group>"; };
+		91EBB513241396AA003E091A /* CarParkUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkUseCaseSpec.swift; sourceTree = "<group>"; };
+		91EBB515241396CF003E091A /* ShuttleBusUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusUseCase.swift; sourceTree = "<group>"; };
+		91EBB517241396E3003E091A /* LectureUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureUseCaseSpec.swift; sourceTree = "<group>"; };
+		91EBB51924139C9C003E091A /* StubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubRepository.swift; sourceTree = "<group>"; };
 		998F168125B64F8663F8759D /* Pods_Dashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F3F907ECF56E072B84DD8EA /* Pods_DashboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73AF32C78639B48B53636A8 /* Pods-DashboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardTests.debug.xcconfig"; path = "Target Support Files/Pods-DashboardTests/Pods-DashboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB95817EB98BCC0E76C03803 /* Pods-Dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.debug.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.debug.xcconfig"; sourceTree = "<group>"; };
+		B22CB1049BD365898887947A /* Pods_Dashboard_DashboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dashboard_DashboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEB818E2B2032EF85477369 /* Pods-DashboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardTests.release.xcconfig"; path = "Target Support Files/Pods-DashboardTests/Pods-DashboardTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED1B02CCD38469C1058A490 /* Pods_DashboardTests.framework in Frameworks */,
+				5172443AD870C642CA03512F /* Pods_Dashboard_DashboardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				998F168125B64F8663F8759D /* Pods_Dashboard.framework */,
-				9F3F907ECF56E072B84DD8EA /* Pods_DashboardTests.framework */,
+				B22CB1049BD365898887947A /* Pods_Dashboard_DashboardTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 				27AEDDA567A7C07BE098A173 /* Pods-Dashboard.release.xcconfig */,
 				A73AF32C78639B48B53636A8 /* Pods-DashboardTests.debug.xcconfig */,
 				EFEB818E2B2032EF85477369 /* Pods-DashboardTests.release.xcconfig */,
+				2E6CBCB5FBE5767AA59D852E /* Pods-Dashboard-DashboardTests.debug.xcconfig */,
+				876967BC54F0F2ABFD38D467 /* Pods-Dashboard-DashboardTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -246,7 +260,8 @@
 		91CE24EE240E2EE60014DA5F /* DashboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				91CE24EF240E2EE60014DA5F /* DashboardTests.swift */,
+				91EBB51224139697003E091A /* Utilities */,
+				91EBB5112413968E003E091A /* Domain */,
 				91CE24F1240E2EE60014DA5F /* Info.plist */,
 			);
 			path = DashboardTests;
@@ -303,8 +318,28 @@
 				91CE251F240E6C9F0014DA5F /* UITableView+Dequeue.swift */,
 				91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */,
 				914FDB1D240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift */,
-				913691BF24130BA2002E45A1 /* String+TimeExtension.swift */,
+				913691BF24130BA2002E45A1 /* String+Time.swift */,
 				913691C124130EA7002E45A1 /* Calendar+Difference.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		91EBB5112413968E003E091A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				91EBB513241396AA003E091A /* CarParkUseCaseSpec.swift */,
+				91EBB515241396CF003E091A /* ShuttleBusUseCase.swift */,
+				91EBB517241396E3003E091A /* LectureUseCaseSpec.swift */,
+				91EBB51924139C9C003E091A /* StubRepository.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		91EBB51224139697003E091A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				91CE24EF240E2EE60014DA5F /* CalendarExtensionSpec.swift */,
+				91EBB50F2413967A003E091A /* StringExtensionSpec.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -339,6 +374,7 @@
 				91CE24E7240E2EE60014DA5F /* Sources */,
 				91CE24E8240E2EE60014DA5F /* Frameworks */,
 				91CE24E9240E2EE60014DA5F /* Resources */,
+				87B4880EF23E4CA40A891BD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +474,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		87B4880EF23E4CA40A891BD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dashboard-DashboardTests/Pods-Dashboard-DashboardTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dashboard-DashboardTests/Pods-Dashboard-DashboardTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dashboard-DashboardTests/Pods-Dashboard-DashboardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B850F9B20A504048769DF3FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,7 +506,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DashboardTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Dashboard-DashboardTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -505,7 +558,7 @@
 				914FDB18240FACF10029EB3E /* ShuttleBusCell.swift in Sources */,
 				91CE2515240E60F20014DA5F /* DashboardViewModel.swift in Sources */,
 				914FDB13240FA5EA0029EB3E /* CircleView.swift in Sources */,
-				913691C024130BA2002E45A1 /* String+TimeExtension.swift in Sources */,
+				913691C024130BA2002E45A1 /* String+Time.swift in Sources */,
 				913691BC2412582F002E45A1 /* FirebaseRepository.swift in Sources */,
 				914FDB0F240FA2950029EB3E /* PlainTextSectionHeader.swift in Sources */,
 				91CE2513240E51010014DA5F /* ShuttleBusUseCase.swift in Sources */,
@@ -517,7 +570,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91CE24F0240E2EE60014DA5F /* DashboardTests.swift in Sources */,
+				91EBB518241396E3003E091A /* LectureUseCaseSpec.swift in Sources */,
+				91CE24F0240E2EE60014DA5F /* CalendarExtensionSpec.swift in Sources */,
+				91EBB5102413967A003E091A /* StringExtensionSpec.swift in Sources */,
+				91EBB516241396CF003E091A /* ShuttleBusUseCase.swift in Sources */,
+				91EBB514241396AA003E091A /* CarParkUseCaseSpec.swift in Sources */,
+				91EBB51A24139C9C003E091A /* StubRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -655,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -707,14 +765,14 @@
 		};
 		91CE24F8240E2EE60014DA5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A73AF32C78639B48B53636A8 /* Pods-DashboardTests.debug.xcconfig */;
+			baseConfigurationReference = 2E6CBCB5FBE5767AA59D852E /* Pods-Dashboard-DashboardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAM3W8FL97;
 				INFOPLIST_FILE = DashboardTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -730,14 +788,14 @@
 		};
 		91CE24F9240E2EE60014DA5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFEB818E2B2032EF85477369 /* Pods-DashboardTests.release.xcconfig */;
+			baseConfigurationReference = 876967BC54F0F2ABFD38D467 /* Pods-Dashboard-DashboardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAM3W8FL97;
 				INFOPLIST_FILE = DashboardTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
