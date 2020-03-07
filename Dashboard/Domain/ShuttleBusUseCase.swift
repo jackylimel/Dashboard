@@ -23,7 +23,7 @@ class ShuttleBusUseCase {
 
     private func filter(buses: [ShuttleBus], limited by: Int) -> [ShuttleBus] {
         let result = buses.filter { bus in
-            return Calendar.current.minuteFromNow(to: bus.time.timeInHourAndMinute()) > 0
+            return bus.minutesForNow > 0
         }.sorted(by: { a, b in
             return a.time < b.time
         }).prefix(by)

@@ -11,7 +11,7 @@
 		682EA90792202F832E4F3D77 /* Pods_Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998F168125B64F8663F8759D /* Pods_Dashboard.framework */; };
 		913691B924120A2A002E45A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913691B824120A2A002E45A1 /* GoogleService-Info.plist */; };
 		913691BC2412582F002E45A1 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BB2412582F002E45A1 /* FirebaseRepository.swift */; };
-		913691C024130BA2002E45A1 /* String+HourAndMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BF24130BA2002E45A1 /* String+HourAndMinute.swift */; };
+		913691C024130BA2002E45A1 /* String+TimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691BF24130BA2002E45A1 /* String+TimeExtension.swift */; };
 		913691C224130EA7002E45A1 /* Calendar+Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913691C124130EA7002E45A1 /* Calendar+Difference.swift */; };
 		91369B12240E817D00135A30 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B11240E817D00135A30 /* ReusableView.swift */; };
 		91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */; };
@@ -62,7 +62,7 @@
 		27AEDDA567A7C07BE098A173 /* Pods-Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.release.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.release.xcconfig"; sourceTree = "<group>"; };
 		913691B824120A2A002E45A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		913691BB2412582F002E45A1 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
-		913691BF24130BA2002E45A1 /* String+HourAndMinute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HourAndMinute.swift"; sourceTree = "<group>"; };
+		913691BF24130BA2002E45A1 /* String+TimeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TimeExtension.swift"; sourceTree = "<group>"; };
 		913691C124130EA7002E45A1 /* Calendar+Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Difference.swift"; sourceTree = "<group>"; };
 		91369B11240E817D00135A30 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 				91CE251F240E6C9F0014DA5F /* UITableView+Dequeue.swift */,
 				91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */,
 				914FDB1D240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift */,
-				913691BF24130BA2002E45A1 /* String+HourAndMinute.swift */,
+				913691BF24130BA2002E45A1 /* String+TimeExtension.swift */,
 				913691C124130EA7002E45A1 /* Calendar+Difference.swift */,
 			);
 			path = Utilities;
@@ -505,7 +505,7 @@
 				914FDB18240FACF10029EB3E /* ShuttleBusCell.swift in Sources */,
 				91CE2515240E60F20014DA5F /* DashboardViewModel.swift in Sources */,
 				914FDB13240FA5EA0029EB3E /* CircleView.swift in Sources */,
-				913691C024130BA2002E45A1 /* String+HourAndMinute.swift in Sources */,
+				913691C024130BA2002E45A1 /* String+TimeExtension.swift in Sources */,
 				913691BC2412582F002E45A1 /* FirebaseRepository.swift in Sources */,
 				914FDB0F240FA2950029EB3E /* PlainTextSectionHeader.swift in Sources */,
 				91CE2513240E51010014DA5F /* ShuttleBusUseCase.swift in Sources */,

@@ -33,17 +33,17 @@ class DashboardViewModel {
     lazy var carParkUseCase = CarParkUseCase()
 
     func loadData() {
-        lectureUseCase.getLectures(limited: 3) { [unowned self] lectures in
+        lectureUseCase.getLectures(limited: Constants.numberOfLectures) { [unowned self] lectures in
             self.mapToCellModel(lectures)
             self.delegate?.dataLoaded(cellType: .lecture)
         }
 
-        shuttleBusUseCase.getBuses(limited: 2) { [unowned self] shuttleBuses in
+        shuttleBusUseCase.getBuses(limited: Constants.numberOfShuttleBuses) { [unowned self] shuttleBuses in
             self.mapToCellModel(shuttleBuses)
             self.delegate?.dataLoaded(cellType: .shuttleBus)
         }
 
-        carParkUseCase.getCarParks(limited: 3) { [unowned self] carParks in
+        carParkUseCase.getCarParks(limited: Constants.numberOfCarParks) { [unowned self] carParks in
             self.mapToCellModel(carParks)
             self.delegate?.dataLoaded(cellType: .carPark)
         }
@@ -51,7 +51,10 @@ class DashboardViewModel {
 
     private func mapToCellModel(_ lectures: [Lecture]) {
         data[CellType.lecture.rawValue] = lectures.enumerated().map { index, lecture -> LectureCell.Model in
-            return LectureCell.Model(startHour: "8:00", startPeriod: "AM", endHour: "10:00", endPeriod: "AM",
+            return LectureCell.Model(startHour: lecture.start,
+                                     startPeriod: lecture.startPeriod,
+                                     endHour: lecture.end,
+                                     endPeriod: lecture.endPeriod,
                                      name: lecture.name,
                                      classRoom: lecture.classroom,
                                      teacher: lecture.teacher,
@@ -64,7 +67,7 @@ class DashboardViewModel {
         self.data[CellType.shuttleBus.rawValue] = shuttleBuses.enumerated().map { index, shuttleBus -> ShuttleBusCell.Model in
             return ShuttleBusCell.Model(from: shuttleBus.from,
                                         to: shuttleBus.to,
-                                        minutes: "123",
+                                        minutes: shuttleBus.minutesForNow,
                                         hasRoundTopCorners: index == 0,
                                         hasRoundBottomCorners: index == shuttleBuses.count - 1)
         }

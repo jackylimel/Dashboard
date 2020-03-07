@@ -10,4 +10,8 @@ import UIKit
 
 struct Constants {
     static let roundedCornerRadius: CGFloat = 4
+
+    static let numberOfLectures: Int = 5
+    static let numberOfShuttleBuses: Int = 3
+    static let numberOfCarParks: Int = 2
 }

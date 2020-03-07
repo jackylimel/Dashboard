@@ -23,7 +23,7 @@ class LectureUseCase {
 
     private func filter(lectures: [Lecture], limited by: Int) -> [Lecture] {
         let result = lectures.filter { lecture in
-            return Calendar.current.minuteFromNow(to: lecture.start.timeInHourAndMinute()) > 0
+            return lecture.startMinutesForNow > 0
         }.sorted(by: { a, b in
             return a.start < b.start
         }).prefix(by)
