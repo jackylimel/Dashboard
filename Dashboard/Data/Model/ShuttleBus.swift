@@ -14,6 +14,6 @@ struct ShuttleBus: Codable {
     let time: String
 
     var minutesForNow: Int {
-        Calendar.current.minuteFromNow(to: time.timeInHourAndMinute())
+        Calendar.current.minutes(from: Date(), to: time.timeInHourAndMinute())
     }
 }

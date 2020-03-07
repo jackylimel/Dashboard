@@ -9,11 +9,10 @@
 import Foundation
 
 extension Calendar {
-    func minuteFromNow(to time: HourAndMinute) -> Int {
-        let date = Date()
-        let nowComponents = self.dateComponents([.day, .hour, .minute], from: date)
-        let dateToCompare = self.date(bySettingHour: time.0, minute: time.1, second: 0, of: date)
-        let dateComponents = self.dateComponents([.day, .hour, .minute], from: dateToCompare ?? date)
+    func minutes(from now: Date, to time: HourAndMinute) -> Int {
+        let nowComponents = self.dateComponents([.day, .hour, .minute], from: now)
+        let dateToCompare = self.date(bySettingHour: time.0, minute: time.1, second: 0, of: now)
+        let dateComponents = self.dateComponents([.day, .hour, .minute], from: dateToCompare ?? now)
         return self.dateComponents([.minute], from: nowComponents, to: dateComponents).minute ?? 0
     }
 }
