@@ -34,7 +34,7 @@ class ShuttleBusCell: UITableViewCell {
     func config(with model: Model) {
         fromLabel.text = model.from
         toLabel.text = model.to
-        minutesLabel.text = "\(model.minutes)"
+        minutesLabel.text = "\(model.minutes) mins"
         separator.isHidden = model.hasRoundBottomCorners
         setupCorner(with: model)
     }
