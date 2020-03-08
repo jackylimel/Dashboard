@@ -10,11 +10,12 @@ import UIKit
 
 extension UITableViewCell {
     func setupCorner(with cellModel: CellModel) {
-        if cellModel.hasRoundTopCorners {
-            roundTopCorners()
-        }
-        if cellModel.hasRoundBottomCorners {
+        if cellModel.hasRoundTopCorners || cellModel.hasRoundTopCorners {
+            roundFourCorners()
+        } else if cellModel.hasRoundBottomCorners {
             roundBottomCorners()
+        } else if cellModel.hasRoundTopCorners {
+            roundTopCorners()
         }
     }
 }
