@@ -26,7 +26,7 @@
 		914FDB16240FACE60029EB3E /* ShuttleBusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914FDB15240FACE60029EB3E /* ShuttleBusCell.xib */; };
 		914FDB18240FACF10029EB3E /* ShuttleBusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB17240FACF10029EB3E /* ShuttleBusCell.swift */; };
 		914FDB1A240FC6810029EB3E /* CarParkUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB19240FC6810029EB3E /* CarParkUseCase.swift */; };
-		914FDB1E240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB1D240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift */; };
+		914FDB1E240FC9820029EB3E /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FDB1D240FC9820029EB3E /* UITableViewCell+Extension.swift */; };
 		91CE24D9240E2EE40014DA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE24D8240E2EE40014DA5F /* AppDelegate.swift */; };
 		91CE24E0240E2EE40014DA5F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24DE240E2EE40014DA5F /* Dashboard.storyboard */; };
 		91CE24E2240E2EE50014DA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CE24E1240E2EE50014DA5F /* Assets.xcassets */; };
@@ -84,7 +84,7 @@
 		914FDB15240FACE60029EB3E /* ShuttleBusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuttleBusCell.xib; sourceTree = "<group>"; };
 		914FDB17240FACF10029EB3E /* ShuttleBusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusCell.swift; sourceTree = "<group>"; };
 		914FDB19240FC6810029EB3E /* CarParkUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkUseCase.swift; sourceTree = "<group>"; };
-		914FDB1D240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+RoundedCorners.swift"; sourceTree = "<group>"; };
+		914FDB1D240FC9820029EB3E /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		91CE24D5240E2EE40014DA5F /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CE24D8240E2EE40014DA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91CE24DF240E2EE40014DA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
@@ -317,7 +317,7 @@
 				91CE2506240E366D0014DA5F /* ColorPalette.swift */,
 				91CE251F240E6C9F0014DA5F /* UITableView+Dequeue.swift */,
 				91369B16240E84DC00135A30 /* UIView+RoundedCorners.swift */,
-				914FDB1D240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift */,
+				914FDB1D240FC9820029EB3E /* UITableViewCell+Extension.swift */,
 				913691BF24130BA2002E45A1 /* String+Time.swift */,
 				913691C124130EA7002E45A1 /* Calendar+Difference.swift */,
 			);
@@ -539,7 +539,7 @@
 			files = (
 				914FDB0B240F9F390029EB3E /* CarParkCell.swift in Sources */,
 				91369B17240E84DC00135A30 /* UIView+RoundedCorners.swift in Sources */,
-				914FDB1E240FC9820029EB3E /* UITableViewCell+RoundedCorners.swift in Sources */,
+				914FDB1E240FC9820029EB3E /* UITableViewCell+Extension.swift in Sources */,
 				914FDB04240F92BD0029EB3E /* LectureSectionHeader.swift in Sources */,
 				91369B1A240E853900135A30 /* Constants.swift in Sources */,
 				91CE2507240E366D0014DA5F /* ColorPalette.swift in Sources */,
