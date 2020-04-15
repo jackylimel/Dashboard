@@ -52,4 +52,4 @@ ViewModel — getting data from Domain and sending back to ViewController
 
 The number of items to be displayed on the screen is configured in Constants.swift, you can specify how many buses, lectures and car parks you want to see by changing the numbers.
 
-The greeting message on the top left is just hardcoded value. The buttons on the screen are just placeholders, in another word, nothing will happen when user taps the button. Also, tapping on any of the views won't transit to other pages. It's just a one-page app. The purpose of the app is to build up a codebase with good code reusability and good architecture.
+You can also press `Command + U` to run all the unit tests.
