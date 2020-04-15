@@ -1,6 +1,8 @@
 # Purpose
 
-This is a one-screen app designed for Monash University Coding Challenge
+This is a one-screen app designed for Monash University Coding Challenge:
+
+![](snapshot.png)
 
 ## Getting Started
 
@@ -38,7 +40,7 @@ The UseCases deal with business logic and in this case, they sort, filter and se
 
 ### Presentation
 
-Presentation is where the UI logic sits. It consists 2 parts:
+Presentation is where the UI logic sits. It consists of 2 parts:
 
 View — responsible for presenting data and interacting with user inputs. It’s implemented using UIView and UIViewController
 
@@ -47,3 +49,5 @@ ViewModel — getting data from Domain and sending back to ViewController
 ## Using the app
 
 The number of items to be displayed on the screen is configured in Constants.swift, you can specify how many buses, lectures and car parks you want to see by changing the numbers.
+
+The greeting message on the top left is just hardcoded value. The buttons on the screen are just placeholders, in another word, nothing will happen when user taps the button. Also, tapping on any of the views won't transit to other pages. It's just a one-page app. The purpose of the app is to build up a codebase with good code reusability and good architecture.
