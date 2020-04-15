@@ -1,6 +1,8 @@
 # Purpose
 
-This is a one-screen app designed for Monash University Coding Challenge:
+This is a one-screen app designed for Monash University Coding Challenge. 
+
+The buttons on the screen are just placeholders, in another word, nothing will happen when user taps the button. Also, tapping on any of the views won't transit to other pages. The greeting message on the top left is just hardcoded value. The goal is to build up a codebase with good code reusability and good architecture.
 
 ![](snapshot.png)
 
